@@ -1,0 +1,85 @@
+.hero-block {
+  width: 72%;
+  border-radius: rem(6px);
+  overflow: hidden;
+  box-shadow: 0 rem(40px) rem(40px) 0 rgba(0, 0, 0, 0.03);
+  background-color: white;
+  position: absolute;
+  display: block;
+  top: rem(0px);
+  z-index: 2;
+  transform: translateY(-50%);
+
+  @include laptop {
+    transform: translateY(-25%);
+  }
+
+  @include tablets {
+    display: none;
+  }
+}
+
+.hero-block__list {
+  display: grid;
+  grid-template: 1fr 1fr /
+  1fr 1fr;
+}
+
+.hero-block__item {
+  padding: rem(73px) 13%;
+  display: flex;
+  align-items: center;
+  border: rem(1px) solid #f7f7f7;
+}
+
+.hero-block__pic {
+  min-width: rem(48px);
+  min-height: rem(48px);
+  border-radius:rem(4px);
+  margin-right: rem(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-block__icon-horse {
+  background-image: linear-gradient(315deg, #ff7676, #f54ea2);
+
+  &::after {
+    content: url('../../images/hourse.png');
+  }
+}
+
+.hero-block__icon-rocket {
+  background-image: linear-gradient(311deg, #fce38a, #f38181);
+
+  &::after {
+    content: url('../../images/rocket.png');
+  }
+}
+
+.hero-block__icon-arrow {
+  background-image: linear-gradient(315deg, rgba(23, 234, 217, 0.1), #22d9db 34%, #6078ea);
+
+  &::after {
+    content: url('../../images/arrow.png');
+  }
+}
+
+.hero-block__icon-wallet {
+  background-image: linear-gradient(135deg, #43e695, #3bb2b8);
+
+  &::after {
+    content: url('../../images/wallet.png');
+  }
+}
+
+.hero-block__desc {
+  font-size: rem(15px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #1e2945;
+}

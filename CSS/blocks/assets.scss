@@ -1,0 +1,77 @@
+.assets {
+  background: #fbfcfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assets__block {
+  background-color: white;
+  width: 90%;
+  padding-top: rem(150px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.assets__title {
+  font-size: rem(40px);
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  color: #1e2945;
+  margin-bottom: rem(60px);
+  text-align: center;
+}
+
+.assets__list {
+  display: flex;
+  width: 70%;
+  min-width: rem(916px);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: rem(180px);
+
+  @include laptop {
+    min-width: rem(600px);
+  }
+
+  @include tablets {
+    min-width: rem(400px);
+  }
+
+  @include phones {
+    min-width: rem(250px);
+  }
+}
+
+.assets__item {
+  width: rem(155px);
+  height: rem(50px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: rem(35px);
+
+  @include tablets {
+    min-width: rem(100px);
+  }
+
+  @include phones {
+    min-width: 100%;
+  }
+}
+
+.assets__link {
+  min-width: 100%;
+  min-height: 100%;
+  background-size: contain;
+}
+
+.assets__link_badoo {
+  background-image: url('../../images/badoo.png');
+  background-repeat: no-repeat;
+}

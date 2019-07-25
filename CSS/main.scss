@@ -1,0 +1,24 @@
+// resolutions
+$desktop: 1440px;
+$laptop: 1200px;
+$bigtablets: 1000px;
+$tablets: 768px;
+$phones: 480px;
+
+//normalize
+@import "normalize.scss";
+@import "layout/media.scss";
+// setups
+@import "layout/fonts.scss";
+@import "layout/layout.scss";
+
+// blocks
+@import "blocks/header.scss";
+@import "blocks/welcome.scss";
+@import "blocks/hero.scss";
+@import "blocks/deposit.scss";
+@import "blocks/assets.scss";
+@import "blocks/mobile.scss";
+@import "blocks/footer.scss";
+
+

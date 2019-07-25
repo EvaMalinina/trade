@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Binotrade</title>
+  <link rel="stylesheet"  href="CSS/main.css">
+  <link rel="stylesheet" type="text/css" href="animation/animate.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="maincontent">   
+      <section class="section welcome">
+        <div class="welcome__layer" data-speed ='0.1'>
+          <img src="/images/welcome-bg1.png" class="welcome__img" alt="welcome-layer">
+        </div>
+        <div class="welcome__layer" data-speed ='0.15'>
+          <img src="/images/welcome-bg2.png" class="welcome__img" alt="welcome-layer">
+        </div>
+        <div class="welcome__layer" data-speed ='0.23'>
+          <img src="/images/welcome-bg3.png" class="welcome__img" alt="welcome-layer">
+        </div>
+        <div class="container">
+          <header class="header" id="header">
+            <div class="header__logo">
+              <div class="header__logo-wrap" onclick="slowScroll('#main')">
+                <div class="logo">
+                  <img src="/images/logo.png" class="logo-icon" alt="logo">
+                  <img src="/images/binotrade.png" alt="logo">
+                </div> 
+              </div> 
+              <div class="header__lang">
+                <select>
+                  <option class="lang">RU</option>
+                  <option class="lang">EN</option>
+                </select>
+            </div>
+            </div>
+            <div class="header__buttons">
+              <div class="menu-wrap">
+                <nav class="menu">
+                  <ul class="menu__list">
+                    <li class="menu__item">
+                      <a href="#" class="menu__link" onclick="slowScroll('#fortraiders')">Трейдерам</a>
+                    </li> 
+                    <li class="menu__item">
+                      <a href="#" class="menu__link" onclick="slowScroll('#aboutcompany')">О компании</a>
+                    </li>  
+                  </ul>
+                </nav>  
+              </div>
+              <a href="#" class="button">Войти</a>
+              <a href="#" class="button button_border">Зарегистрироваться</a>
+             </div> 
+             <ul class="humburger" id="humburger">
+              <li class="humburger__item"></li>
+              <li class="humburger__item"></li>
+              <li class="humburger__item"></li>
+            </ul>
+          </header>
+          <div class="welcome__container">
+            <div class="welcome__text">
+              <h2 class="welcome-title wow fadeInDown">Простой инструмент для онлайн торговли</h2>
+              <p class="welcome__desc wow fadeInDown" data-wow-delay="1s">Первая прибыль через 1 минуту</p>
+              <button class="welcome__button wow fadeInDown" data-wow-delay="2s">Начать торговать</button> 
+            </div>
+          </div>   
+        </div>
+      </section>
+      <section class="section deposit" id="fortraiders">
+        <section class="hero-block">
+          <ul class="hero-block__list">
+            <li class="hero-block__item">
+              <div class="hero-block__pic hero-block__icon-horse"></div>
+              <span class="hero-block__desc">Оттачи выигрышную стратегию на учебном счете</span>
+            </li> 
+            <li class="hero-block__item">
+                <div class="hero-block__pic hero-block__icon-rocket"></div>
+                <span class="hero-block__desc">Торгуй с минимумом вложений и получай до 95% прибыли</span>
+            </li> 
+            <li class="hero-block__item">
+                <div class="hero-block__pic hero-block__icon-arrow"></div>
+                <span class="hero-block__desc">Определяй куда пойдет цена актива: вверх или вниз</span>
+            </li> 
+            <li class="hero-block__item">
+              <div class="hero-block__pic hero-block__icon-wallet"></div>
+              <span class="hero-block__desc">Выводи прибыль без ограничений на карту или онлайн-кошелек</span>
+            </li> 
+          </ul>
+        </section>
+        <div class="deposit__box-blue">
+          <div class="deposit__circle-blue"></div>
+        </div>
+        <div class="deposit__box-yellow">
+          <div class="deposit__circle-doll"></div>
+        </div>
+        <div class="deposit__box-green">
+          <div class="deposit__circle-dollar"></div>
+        </div>
+        <div class="deposit__box-red">
+          <div class="deposit__circle-red"></div>
+        </div>
+        <div class="deposit__box-bigcloud"></div>
+        <div class="deposit__box-smallcloud"></div>
+        <div class="deposit__box-middlecloud"></div>
+
+        <div class="deposit__container">
+          <nav class="deposit__menu">
+            <ul class="deposit__list">
+              <li class="deposit__item deposit__item_active">
+                <a href="#" class="deposit__link">Минимальный депозит 10$</a>
+              </li>
+              <li class="deposit__item">
+                <a href="#" class="deposit__link">Персональный менеджер</a>
+              </li>
+              <li class="deposit__item">
+                  <a href="#" class="deposit__link">Бесплатное обучение</a>
+              </li>
+              <li class="deposit__item">
+                <a href="#" class="deposit__link">Круглосуточная поддержка</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="deposit__info">
+            <div class="deposit__desc">
+              <h2 class="deposit__title">Минимальный депозит 10$</h2>
+              <div class="deposit__text">Реальный счет позволит вам зарабатывать реальные деньги. Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет. Минимальный депозит составляет всего 10 $. Это реальный шанс увеличить свой доход!</div>
+            </div>
+            <div class="deposit__pic wow bounce" data-wow-duration="5s">
+              <div class="deposit__pic-inner"></div>
+            </div>
+          </div>      
+         </div>
+      </section>
+      <section class="assets">
+        <div class="assets__block">
+          <h3 class="assets__title wow fadeInDown">Более 50 проверенных активов</h3>
+          <ul class="assets__list">
+            <li class="assets__item wow fadeInDown" data-wow-delay="0.5s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="1s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="1.5s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="2s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="2.5s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="3s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="3.5s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="4s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="4.5s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+            <li class="assets__item wow fadeInDown" data-wow-delay="5s">
+              <a href="#" class="assets__link assets__link_badoo"></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="mobile">
+        <div class="mobile__container">
+          <div class="mobile__desc">
+            <h3 class="mobile__title">Мобильные приложения</h3>
+            <span class="mobile__text">Торговля на нескольких графиках, технический анализ, история котировок и многое другое. Все, что вам нужно на платформе, доступно на любом устройстве по вашему выбору.</span>
+          </div>
+          <div class="mobile__box-one wow fadeInRight">
+            <div class="mobile__one"></div>
+          </div>
+          <div class="mobile__box-two wow fadeInRight" data-wow-delay="1s">
+            <div class="mobile__two"></div>
+          </div>
+          <div class="mobile__extra" id="aboutcompany">
+            <h4 class="mobile__extra-title wow fadeInDown">Binotrade.com — бинарный опцион с личным помощником</h4>
+            <div class="mobile__extra-text">
+              <div class="mobile__extra-column wow fadeInDown" data-wow-delay="1s">Binotrade - это торговая платформа, удобный инструмент, который предлагает не только возможность заработать с помощью торговли бинарными опционами, но и предоставляет профессиональный клиентский сервис. Сразу после регистрации на Binotrade.com, каждый клиент получает личного консультанта.</div>
+              <div class="mobile__extra-column wow fadeInDown" data-wow-delay="2s">Вам нужен совет по торговле активами или вы не можете подобрать подходящую торговую стратегию? Обратитесь к вашему личному консультанту, который поможет вам в решении вопроса. Вам не нужен статус VIP-клиента, чтобы пользоваться квалифицированным клиентским сервисом!</div>
+            </div>
+          </div> 
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__info">
+            <h5 class="footer__title">Правовая информация</h5>
+            <a href="#" class="footer__link">Положения и условия</a>
+            <a href="#" class="footer__link">Политика по борьбе с отмыванием денег</a>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+            <a href="#" class="footer__link">Политика Проведения платежей</a>
+          </div>
+          <div class="footer__info">
+            <h5 class="footer__title">Трейдерам</h5>
+            <a href="#" class="footer__link">Активы</a>
+            <a href="#" class="footer__link">Архив котеровок</a>
+            <a href="#" class="footer__link">Частые вопросы</a>
+            <a href="#" class="footer__link">Обучение</a>
+          </div>
+          <div class="footer__info">
+            <h5 class="footer__title">О компании</h5>
+            <a href="#" class="footer__link">Новости</a>
+            <a href="#" class="footer__link">Контакты</a>
+          </div>
+          <div class="footer__app-links">
+            <div class="footer__app">
+              <div class="apple-store"></div>
+            </div>
+            <div class="footer__app">
+              <div class="google-store"></div>
+            </div>
+          </div>
+          <div class="footer__links">
+            <div class="footer__socials">
+              <ul class="socials">
+                <li class="socials__item">
+                  <a href="#" class="social__link">
+                    <img src="/images/fb.png" alt="fb" class="social__img">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="social__link">
+                    <img src="/images/vk.png" alt="vk" class="social__img">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="social__link">
+                    <img src="/images/twitter.png" alt="twitter" class="social__img">
+                  </a>
+                </li>
+                <li class="socials__item">
+                  <a href="#" class="social__link">
+                    <img src="/images/g-plus.png" alt="google" class="social__img">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__creator-logo">
+              <img src="/images/solar-logo.png" alt="soler-logo">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="animation/wow.min.js"></script>
+  <script>
+      new WOW().init();
+  </script>
+  <script src="scripts/index.js"></script>
+</body>
+
+</html>
